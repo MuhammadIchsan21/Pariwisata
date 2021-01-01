@@ -92,34 +92,6 @@
     Xoffset: 15,
     });
     });
-    // function myMap() {
-    // var mapProp = {
-    // center: new google.maps.LatLng(-1.2741896679237057, 116.85689054782411),
-    // zoom: 13
-    // };
-    // }
-
-    // let lat = {$item->travel_packages->lat};
-    // let long = {$item->travel_packages->long};
-    // let icon = {$item->kategories->icon};
-
-    // let map = new google.maps.Map(
-    // document.getElementById("googleMap"),{
-    // center:{
-    // lat:lat,
-    // long:long
-    // },
-    // zoom:15
-    // });
-
-    // let marker = new google.maps.Marker({
-    // position:{
-    // lat:lat,
-    // long:long,
-    // icon:icon
-    // },
-    // map:map
-    // });
 </script>
 <script type='text/javascript'
     src='https://maps.google.com/maps/api/js?language=en&key=AIzaSyB2C8vk7iaIGmDNt-TfJDQ_mdcyc7VbtTE&libraries=places&region=GB'>
@@ -135,7 +107,6 @@
   				style:google.maps.ZoomControlStyle.DEFAULT
 			},
 			center: new google.maps.LatLng({{ $item->lat}}, {{ $item->long }}),
-            icon: 'new google.maps.Marker({{Storage::url($items->icon)}})',
 			mapTypeId: google.maps.MapTypeId.ROADMAP,
 			scrollwheel: false,
 			panControl:false,
@@ -145,6 +116,14 @@
 			rotateControl:false
 	  	}
 		var map = new google.maps.Map(document.getElementById('map'), mapOptions);
+        //Marker
+        const marker = new google.maps.Marker({
+            map: map,
+            position: new google.maps.LatLng({{ $item->lat}}, {{ $item->long }}),
+            icon: '{{Storage::url($items->icon)}}'
+        });
+
+        marker.setVisible(isEdit);
     }
     google.maps.event.addDomListener(window, 'load', initialize);
 </script>
