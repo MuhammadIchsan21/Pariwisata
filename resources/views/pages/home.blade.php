@@ -32,10 +32,10 @@ Home
         <div class="row">
             <div class="col-12 text-center section-birth-death" id="Pariwisata">
                 <h2 class="text-center mt-3 travel">Travel</h2>
-                <!-- Search form -->
+                {{-- <!-- Search form -->
                 <div class="active-cyan-3 active-cyan-4 mb-4">
                     <input class="form-control" type="text" placeholder="Search" aria-label="Search" />
-                </div>
+                </div> --}}
                 <section class="section-popular-content" id="popularContent">
                     <div class="container">
                         <div class="section-popular-travel row justify-content-center">
