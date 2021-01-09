@@ -7,6 +7,28 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
 
+## Cara Pakai
+
+
+
+- Download / Clone git
+- composer install
+- copy dan edit env.example menjadi .env
+- php artisan key:generate
+- buat database baru
+- buka code editor dan ubah settingan database di .env
+- php artisan migrate
+- php artisan Storage:link
+- refresh halaman database
+- php artisan serve
+- buat akun baru 
+- refresh halaman database
+- ubah roles akun anda menjadi admin
+- http://127.0.0.1:8000/admin (port anda/admin)
+
+Laravel is accessible, powerful, and provides tools required for large, robust applications.
+
+
 ## About Laravel
 
 Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
