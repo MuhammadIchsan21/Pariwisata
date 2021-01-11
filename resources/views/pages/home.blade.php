@@ -10,16 +10,16 @@ Home
     <div class="row d-flex flex-column">
         <header class="text-center">
             <h1>
-                Explore The Beautiful World
+                Jelajahi Keindahan Indonesia
                 <br />
-                As Easy One Click
+                Dengan sekali klik
             </h1>
             <p class="mt-3">
-                You will see beautiful
+                Kamu akan melihat momen indah
                 <br />
-                moment you never see before
+                yang belum kamu lihat sebelumnya
             </p>
-            <a href="#Pariwisata" class="btn btn-get-started px-4 mt-4"> Get Started </a>
+            <a href="#Pariwisata" class="btn btn-get-started px-4 mt-4"> jelajahi Sekarang </a>
         </header>
     </div>
 </div>
@@ -48,7 +48,7 @@ Home
                                     <div class="travel-location">{{$item->title}}</div>
                                     <div class="travel-button mt-auto">
                                         <a href="{{route('detail', $item->slug)}}" class="btn btn-travel-details px-4">
-                                            View Details
+                                            Kunjungi
                                         </a>
                                     </div>
                                 </div>

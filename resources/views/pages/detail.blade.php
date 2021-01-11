@@ -42,7 +42,7 @@
                         <tr>
                             <th width="50%">Tanggal Keberangkatan</th>
                             <td width="50%" class="text-right">
-                                {{ \Carbon\Carbon::create($item->date_of_departure)->format('F n, Y')}}</td>
+                                {{ \Carbon\Carbon::create($item->departure_date)->format('d M, Y')}}</td>
                         </tr>
                         <tr>
                             <th width="50%">Berapa Lama?</th>
@@ -63,12 +63,12 @@
                     <form action="{{route('checkout_process', $item->id)}}" method="post">
                         @csrf
                         <button class="btn btn-block btn-join-now mt-3 py-2" type="submit">
-                            Join Now
+                            Lanjutkan
                         </button>
                     </form>
                     @endauth
                     @guest
-                    <a href="{{route('login')}}" class="btn btn-block btn-join-now mt-3 py-2">Login Or Register</a>
+                    <a href="{{route('login')}}" class="btn btn-block btn-join-now mt-3 py-2">Masuk </a>
                     @endguest
                 </div>
             </div>

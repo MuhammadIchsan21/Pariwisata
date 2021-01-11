@@ -10,7 +10,7 @@
         <div class="collapse navbar-collapse" id="navb">
             <ul class="navbar-nav ml-auto mr-3">
                 <li class="nav-item mx-md-2">
-                    <a href="#home" class="nav-link active">Home</a>
+                    <a href="{{route('home')}}" class="nav-link active">Home</a>
                 </li>
                 <li class="nav-item mx-md-2">
                     <a href="#Pariwisata" class="nav-link">Pariwisata</a>

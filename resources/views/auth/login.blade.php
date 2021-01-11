@@ -59,7 +59,7 @@
 
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <button type="submit" class="btn btn-primary btn-block">
+                                <button type="submit" class="btn btn-primary btn-block btn-login1">
                                     {{ __('Login') }}
                                 </button>
 
@@ -73,7 +73,7 @@
                         <hr>
                         <div class="form-group row mb-0">
                             <div class="col-md-8 offset-md-4">
-                                <a href="{{route('register')}}" class="btn btn-success btn-block">
+                                <a href="{{route('register')}}" class="btn btn-success btn-block btn-register">
                                     Buat Akun Baru
                                 </a>
                             </div>
@@ -85,3 +85,25 @@
     </div>
 </div>
 @endsection
+
+@push('addon-style')
+<style>
+    .btn-login1 {
+        width: 74% !important;
+    }
+
+    .btn-register {
+        width: 74% !important;
+    }
+
+    @media(max-width:767px) {
+        .btn-login1 {
+            width: 100% !important;
+        }
+
+        .btn-register {
+            width: 100% !important;
+        }
+    }
+</style>
+@endpush
